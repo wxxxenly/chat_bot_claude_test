@@ -13,7 +13,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Конфигурация API
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = "ваш_ключ_openrouter"
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -108,7 +108,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 def main():
     """Основная функция запуска бота"""
     # Токен бота
-    token = "7588100365:AAE5g9hQ3GZ-pGpsyYq9fUUUJ58AujUNEdU"
+    token = "ваш_токен_telegram_бота"
     
     # Создаем приложение
     application = Application.builder().token(token).build()
